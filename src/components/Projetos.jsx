@@ -20,7 +20,9 @@ function Projetos() {
             <button>Express.js</button>
             <button>MySQL</button>
             <div className="link-project">
-              <a href="">Ver Projeto</a>
+              <a href="https://web-barber-xi.vercel.app/" target="_blank">
+                Ver Projeto
+              </a>
             </div>
           </div>
         </div>
@@ -36,7 +38,63 @@ function Projetos() {
             <button>CSS</button>
             <button>VueJS</button>
             <div className="link-project">
-              <a href="">Ver Projeto</a>
+              <a
+                href="https://hebertyrichards.github.io/Gerador-de-QRCode/"
+                target="_blank"
+              >
+                Ver Projeto
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="info-projects">
+          <img src="/projeto3.png" alt="Site Geek"></img>
+          <div className="project-info">
+            <h2>Geek-Nine</h2>
+            <p>
+              site de notícias voltado para o universo geek, que incluía
+              cadastro e login de usuários, além de um chat global para
+              interação em tempo real.
+            </p>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+            <button>JQuery</button>
+            <button>PHP</button>
+            <button>SQLite</button>
+            <div className="link-project">
+              <a
+                href="https://geeknine-production.up.railway.app"
+                target="_blank"
+              >
+                Ver Projeto
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="info-projects">
+          <img src="/projeto4.png" alt="Projeto Empresarial"></img>
+          <div className="project-info">
+            <h2>Geek-Solutions</h2>
+            <p>
+              empresa do setor tecnológico, estruturando seções como informações
+              institucionais, apresentação de serviços, área de contato e um
+              banco de currículos na seção "Trabalhe Conosco". O site também
+              contou com integração para envio de e-mails
+            </p>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+            <button>JQuery</button>
+            <button>PHP</button>
+            <button>SQLite</button>
+            <div className="link-project">
+              <a
+                href="https://hebertyrichards.github.io/Geek-Solutions/"
+                target="_blank"
+              >
+                Ver Projeto
+              </a>
             </div>
           </div>
         </div>

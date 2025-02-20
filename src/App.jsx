@@ -5,6 +5,7 @@ import Sobre from "./components/Sobre";
 import Projetos from "./components/Projetos";
 import SliderImage from "./components/SliderImage";
 import Skills from "./components/Skills";
+import Contato from "./components/Contato";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <SliderImage />
       <Skills />
       <Projetos />
+      <Contato />
     </>
   );
 }

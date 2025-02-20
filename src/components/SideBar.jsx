@@ -1,5 +1,7 @@
 import React from "react";
 import Modo from "./Modo";
+import Sobre from "./Sobre";
+import App from "../App";
 import "../App.css";
 
 function SideBar() {
@@ -19,9 +21,9 @@ function SideBar() {
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
             ×
           </a>
-          <a href="/">Home</a>
-          <a href="#">Sobre</a>
-          <a href="#">Contato</a>
+          <a href="">Home</a>
+          <a href="#frase-impacto">Sobre</a>
+          <a href="#contact">Contato</a>
         </div>
       </nav>
     </>
