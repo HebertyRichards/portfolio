@@ -161,7 +161,7 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url("./src/assets/linkedin.png");
+  background-image: url("../src/assets/linkedin.png");
   background-size: cover;
   margin: 10px;
 }
@@ -170,7 +170,7 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url("./src/assets/github.png");
+  background-image: url("../src/assets/github.png");
   background-size: cover;
   margin: 10px;
 }

@@ -19,55 +19,55 @@ const SliderImage = () => {
       >
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/html.png" alt="HTML" />
+            <img src="../html.png" alt="HTML" />
             <h2>HTML</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/css.png" alt="CSS" />
+            <img src="../css.png" alt="CSS" />
             <h2>CSS</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/javascript.png" alt="JavaScript" />
+            <img src="../javascript.png" alt="JavaScript" />
             <h2>JavaScript</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/node.png" alt="Node.js" />
+            <img src="../node.png" alt="Node.js" />
             <h2>Node.js</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/react.png" alt="React" />
+            <img src="../react.png" alt="React" />
             <h2>React.js</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/express.png" alt="Express" />
+            <img src="../express.png" alt="Express" />
             <h2>Express.js</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/php.png" alt="PHP" />
+            <img src="../php.png" alt="PHP" />
             <h2>PHP</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/python.png" alt="Python" />
+            <img src="../python.png" alt="Python" />
             <h2>Python</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="./src/assets/mysql.png" alt="MySQL" />
+            <img src="../mysql.png" alt="MySQL" />
             <h2>MySQL</h2>
           </div>
         </SwiperSlide>
