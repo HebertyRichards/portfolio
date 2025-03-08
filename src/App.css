@@ -1,0 +1,398 @@
+html,
+body,
+.back {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background: linear-gradient(to right, gray, black);
+  color: white;
+}
+
+#back {
+  background-image: url("../src/assets/back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.modo {
+  display: flex;
+  transition: margin-left 0.5s;
+  margin-left: auto;
+}
+
+#mySection2 {
+  width: 100%;
+  background-color: rgb(38, 38, 39);
+  z-index: 10;
+  position: fixed;
+}
+
+#mySection {
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(38, 38, 39);
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.modo a {
+  display: block;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 3;
+}
+
+.container a {
+  color: white;
+  border: none;
+  margin-left: 50px;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  color: #2e2e2e;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+.openbtn {
+  opacity: 1;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.apresentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.apresentation h1 {
+  font-size: 3em;
+}
+
+.apresentation p {
+  font-size: 1.5em;
+}
+
+.redes {
+  display: flex;
+  padding: 10px;
+}
+
+#linkedin {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../src/assets/linkedin.png");
+  background-size: cover;
+  margin: 10px;
+}
+
+#github {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../src/assets/github.png");
+  background-size: cover;
+  margin: 10px;
+}
+
+#linkedin:hover,
+#github:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.sobre-container {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 50%;
+  gap: 20px;
+  opacity: 0;
+  font-size: 1.5em;
+  transition: opacity 1s ease-out;
+  text-align: center;
+}
+
+.sobre-container.visible {
+  opacity: 1;
+}
+
+.sobre-content {
+  flex: 1;
+}
+
+#frase-impacto {
+  font-size: 2em;
+  color: rgb(236, 222, 17);
+  -webkit-text-stroke: 0.5px black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.infos {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.hard,
+.soft {
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.projects {
+  padding: 5%;
+  margin-top: 10%;
+  color: rgb(236, 222, 17);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.info-projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.info-projects img {
+  width: 400px;
+  height: 250px;
+}
+
+.project-info {
+  margin-left: 20px;
+  width: 80%;
+}
+
+.project-info p {
+  color: white;
+}
+
+.project-info h2 {
+  text-align: left;
+}
+
+.project-info button {
+  padding: 5px;
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  color: rgb(236, 222, 17);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link-project a {
+  color: white;
+  margin: 10px;
+}
+
+#contact {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.copy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+}
+
+.tooltip-box {
+  margin: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+@media (max-width: 1366px) {
+  #frase-impacto {
+    font-size: 1.5em;
+  }
+  .projects {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    width: 90%;
+  }
+
+  .infos {
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .info-projects img {
+    margin: 0 auto;
+    width: 250px;
+    height: 130px;
+  }
+
+  .info-projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-info {
+    width: 98%;
+  }
+
+  .apresentation {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .apresentation h1,
+  #frase-impacto {
+    font-size: 1.3em;
+  }
+
+  .apresentation p {
+    font-size: 1em;
+  }
+
+  .sobre-container {
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 90%;
+    gap: 5px;
+  }
+
+  .sobre-container p {
+    font-size: 0.8em;
+  }
+
+  .infos {
+    width: 90%;
+  }
+
+  .hard,
+  .soft {
+    width: 70%;
+    font-size: 1em;
+  }
+
+  .slider-container {
+    width: 50%;
+  }
+
+  .project-info button {
+    padding: 3px;
+  }
+}
