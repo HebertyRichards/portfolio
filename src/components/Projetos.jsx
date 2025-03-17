@@ -1,10 +1,48 @@
+import React, { useState, useEffect, useRef } from "react";
+
 function Projetos() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAppeared, setHasAppeared] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      setIsVisible(true);
+      setHasAppeared(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          setHasAppeared(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current && !hasAppeared) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [hasAppeared]);
+
   return (
     <>
-      <div className="projects">
+      <div
+        ref={sectionRef}
+        className={`projects ${isVisible ? "visible" : ""}`}
+      >
         <h2>Projetos realizados</h2>
         <div className="info-projects">
-          <img src="./projeto1.png" alt="Web Barber Shop"></img>
+          <img src="./projeto1.png" alt="Web Barber Shop" />
           <div className="project-info">
             <h2>Web Barber Shop</h2>
             <p>
@@ -15,7 +53,6 @@ function Projetos() {
               direciona os clientes para o WhatsApp em caso de compra de
               produtos.
             </p>
-            <button>HTML</button>
             <button>CSS</button>
             <button>React.js</button>
             <button>Node.js</button>
@@ -34,8 +71,9 @@ function Projetos() {
             </div>
           </div>
         </div>
+        <hr></hr>
         <div className="info-projects">
-          <img src="/projeto2.png" alt="Gerar qrcode"></img>
+          <img src="/projeto2.png" alt="Gerar qrcode" />
           <div className="project-info">
             <h2>Gerador de QRcode</h2>
             <p>
@@ -61,8 +99,9 @@ function Projetos() {
             </div>
           </div>
         </div>
+        <hr></hr>
         <div className="info-projects">
-          <img src="/projeto3.png" alt="Site Geek"></img>
+          <img src="/projeto3.png" alt="Site Geek" />
           <div className="project-info">
             <h2>Geek-Nine</h2>
             <p>
@@ -92,8 +131,9 @@ function Projetos() {
             </div>
           </div>
         </div>
+        <hr></hr>
         <div className="info-projects">
-          <img src="/projeto4.png" alt="Projeto Empresarial"></img>
+          <img src="/projeto4.png" alt="Projeto Empresarial" />
           <div className="project-info">
             <h2>Geek-Solutions</h2>
             <p>
@@ -124,6 +164,7 @@ function Projetos() {
             </div>
           </div>
         </div>
+        <hr></hr>
       </div>
     </>
   );

@@ -10,6 +10,7 @@ function SideBar2() {
         <div className="container">
           <a href="">Home</a>
           <a href="#frase-impacto">Sobre</a>
+          <a href="#h2">Serviços</a>
           <a href="#contact">Contato</a>
         </div>
       </nav>

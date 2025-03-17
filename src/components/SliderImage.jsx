@@ -31,26 +31,38 @@ const SliderImage = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
+            <img src="../typescript.png" alt="TypeScript" />
+            <h2>TypeScript</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide">
             <img src="../javascript.png" alt="JavaScript" />
             <h2>JavaScript</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="../node.png" alt="Node.js" />
-            <h2>Node.js</h2>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide">
-            <img src="../react.png" alt="React" />
+            <img src="../react.png" alt="React.js" />
             <h2>React.js</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="../express.png" alt="Express" />
-            <h2>Express.js</h2>
+            <img src="../vue.png" alt="Vue.js" />
+            <h2>Vue.js</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide">
+            <img src="../nextjs.png" alt="Next.js" />
+            <h2>Next.js</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide">
+            <img src="../node.png" alt="Node.js" />
+            <h2>Node.js</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -69,6 +81,12 @@ const SliderImage = () => {
           <div className="slide">
             <img src="../mysql.png" alt="MySQL" />
             <h2>MySQL</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide">
+            <img src="../mongodb.png" alt="MongoDB" />
+            <h2>MongoDB</h2>
           </div>
         </SwiperSlide>
       </Swiper>
