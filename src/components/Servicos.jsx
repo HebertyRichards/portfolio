@@ -1,4 +1,6 @@
 import React from "react";
+import Contato from "./Contato";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -72,20 +74,60 @@ const services = [
 
 const Servicos = () => {
   return (
-    <section className="services-section">
-      {services.map((service, index) => (
-        <div className="service-card" key={index}>
-          <div className="service-icon">{service.icon}</div>
-          <h3>{service.title}</h3>
-          <p>{service.description}</p>
-          <ul>
-            {service.items.map((item, idx) => (
-              <li key={idx}>• {item}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </section>
+    <>
+      <div id="servicos"></div>
+      <motion.div
+        className="services-im"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <h2 id="service-h2">Meus Serviços</h2>
+        <p>
+          Ofereço soluções completas para transformar suas ideias em realidade
+          digital, com foco em qualidade e inovação.
+        </p>
+      </motion.div>
+      <section className="services-section">
+        {services.map((service, index) => (
+          <motion.div
+            className="service-card"
+            key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <div className="service-icon">{service.icon}</div>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+            <ul>
+              {service.items.map((item, idx) => (
+                <li key={idx}>• {item}</li>
+              ))}
+            </ul>
+          </motion.div>
+        ))}
+      </section>
+      <motion.div
+        className="profi-service"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <h2 id="h2-service">Precisa de um Serviço Peronalizado?</h2>
+        <p>
+          Cada projeto é único e pode exigir uma abordagem específica. Entre em
+          contato para discutirmos suas necessidades e criarmos uma solução sob
+          medida para o seu negócio.
+        </p>
+        <a id="button-talk" href="#contato">
+          Fale Comigo
+        </a>
+      </motion.div>
+    </>
   );
 };
 

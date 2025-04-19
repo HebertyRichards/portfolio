@@ -9,6 +9,7 @@ body,
 html {
   scrollbar-color: #888 #f1f1f1;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -66,7 +67,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: auto;
-  padding: 10px;
+  padding: 5px;
 }
 
 #button-talk {
@@ -262,30 +263,6 @@ body {
   background-color: hsl(12, 76%, 61%);
 }
 
-#linkedin {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url("../src/assets/linkedin.png");
-  background-size: cover;
-  margin: 10px;
-}
-
-#github {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url("../src/assets/github.png");
-  background-size: cover;
-  margin: 10px;
-}
-
-#linkedin:hover,
-#github:hover {
-  transform: scale(1.2);
-  transition: transform 0.5s ease-in-out;
-}
-
 /* seção sobre mim e skills */
 
 .sobre-info {
@@ -377,6 +354,11 @@ body {
 
 #proj {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  border-bottom: 4px solid hsl(252, 59%, 48%);
+  width: 15%;
+  margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 #proj2 {
@@ -388,6 +370,7 @@ body {
   padding: 20px;
   width: 70%;
   margin: 0 auto;
+  margin-top: 5%;
 }
 
 .projects-grid {
@@ -464,6 +447,12 @@ body {
 #diferecials-title {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  border-bottom: 4px solid hsl(252, 59%, 48%);
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding-bottom: 5px;
 }
 
 .diferenciais-container {
@@ -484,6 +473,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin-top: 2%;
 }
 
 .card {
@@ -583,7 +573,7 @@ body {
   padding: 10px;
   width: 40%;
   margin: 0 auto;
-  margin-top: 3%;
+  margin-top: 5%;
   text-align: center;
   background-color: #131313;
   border: 1px solid #2a2a2a;
@@ -599,7 +589,45 @@ body {
   color: HSL(0, 0%, 60.9%);
 }
 
+.services-im {
+  margin-top: 5%;
+  text-align: center;
+}
+
+#service-h2 {
+  font-size: 2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 4px solid hsl(252, 59%, 48%);
+  width: 12%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.services-im p {
+  color: HSL(0, 0%, 60.9%);
+}
+
 /* contato */
+
+.contact-main {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.contact-main p {
+  color: HSL(0, 0%, 60.9%);
+}
+
+#contact-h2 {
+  font-size: 2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 4px solid hsl(252, 59%, 48%);
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
 
 .contact-section {
   color: #fff;
@@ -611,8 +639,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  max-width: 1200px;
+  width: 65%;
   margin: 0 auto;
+  margin-top: 5%;
 }
 
 .contact-info h2 {
@@ -624,6 +653,7 @@ body {
 .contact-info p {
   margin-bottom: 2rem;
   line-height: 1.6;
+  color: HSL(0, 0%, 60.9%);
 }
 
 .social-icons {
@@ -672,19 +702,47 @@ body {
 
 .contact-form button {
   padding: 0.75rem;
-  background-color: #7b4eff;
+  background-color: HSL(252, 59%, 48%);
   border: none;
   border-radius: 8px;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
+}
+
+.contact-form button:hover {
+  background-color: HSL(252, 59%, 40%);
+}
+
+#linkedin,
+#github {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../src/assets/linkedin.png");
+  background-size: cover;
+  margin: 10px;
+}
+
+#linkedin {
+  background-image: url("../src/assets/linkedin.png");
+}
+
+#github {
+  background-image: url("../src/assets/github.png");
+}
+#linkedin:hover,
+#github:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
 }
 
 /* rodape */
 
 footer {
   background-color: #131313;
+  margin-top: 5%;
 }
 
 .rodape-infos {
@@ -726,9 +784,61 @@ hr {
   color: HSL(0, 0%, 90.9%);
 }
 
+.infos4 {
+  align-items: center;
+}
+
+.copy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: HSL(252, 59%, 48%);
+  color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.copy-button:hover {
+  background-color: HSL(252, 59%, 40%);
+}
+
+.tooltip-box {
+  margin: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
 #direitos {
   text-align: center;
   color: HSL(0, 0%, 60.9%);
+}
+
+/* responsividade */
+@media (max-width: 1024px) {
+  .sobre-info h2 {
+    width: 30%;
+  }
+
+  #diferecials-title {
+    width: 40%;
+  }
+
+  #service-h2 {
+    width: 30%;
+  }
+
+  #proj {
+    width: 40%;
+  }
+
+  #contact-h2 {
+    width: 60%;
+  }
 }
 @media (max-width: 800px) {
   .menu-container {
@@ -797,7 +907,20 @@ hr {
 
   .card {
     width: 200px;
+    margin-top: 5%;
   }
+
+  #diferecials-title {
+    font-size: 1.2em;
+    width: 60%;
+    margin-top: 5%;
+  }
+
+  #proj {
+    font-size: 1.3em;
+    width: 50%;
+  }
+
   .projects-section {
     width: 85%;
   }
@@ -810,13 +933,21 @@ hr {
     grid-template-columns: 1fr;
     padding: 5px;
   }
-  .profi-service {
-    padding: 5px;
-    width: 90%;
-    margin-top: 10%;
+
+  #service-h2 {
+    font-size: 1.5em;
+    width: 50%;
   }
+
+  .profi-service {
+    padding: 10px;
+    width: 90%;
+    margin-top: 20%;
+  }
+
   .contact-container {
     grid-template-columns: 1fr;
+    width: 90%;
   }
 
   .form-row {
@@ -829,7 +960,54 @@ hr {
 
   #linkedin,
   #github {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+  }
+
+  #contact-h2 {
+    font-size: 1.1em;
+    width: 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .contact-info h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+    border-radius: 10px;
+    gap: 1.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .infos,
+  .infos2,
+  .infos3,
+  .infos4 {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+
+  .rodape-infos {
+    flex-wrap: wrap;
+  }
+
+  .rodape-infos a {
+    padding: 5px;
+    font-size: 1.1em;
   }
 }

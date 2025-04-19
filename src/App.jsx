@@ -4,7 +4,6 @@ import Apresentation from "./components/Apresentation";
 import Sobre from "./components/Sobre";
 import Projeto from "./components/Projetos";
 import Servicos from "./components/Servicos";
-import Service from "./components/Service";
 import Contato from "./components/Contato";
 import Footer from "./pages/footer/Footer";
 import "./App.css";
@@ -19,7 +18,6 @@ function App() {
       <Sobre />
       <Projeto />
       <Servicos />
-      <Service />
       <Contato />
       <Footer />
     </>

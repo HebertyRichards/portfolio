@@ -1,7 +1,18 @@
+import React from "react";
+import Projeto from "./Projetos";
+import Contato from "./Contato";
+import { motion } from "framer-motion";
+
 function Apresentation() {
   return (
     <>
-      <div className="menu-container">
+      <motion.div
+        className="menu-container"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="apresentation">
           <h2 id="h2">
             Transformando ideias em <span>experiências digitais</span>
@@ -11,10 +22,10 @@ function Apresentation() {
             acessibilidade e design moderno para elevar sua presença online.
           </p>
           <div className="buttons">
-            <a id="button-talk" href="#">
+            <a id="button-talk" href="#projetos">
               Ver Projetos
             </a>
-            <a id="talk" href="#">
+            <a id="talk" href="#contato">
               Fale Comigo
             </a>
           </div>
@@ -22,7 +33,7 @@ function Apresentation() {
         <div className="port">
           <img src="./image.png"></img>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
