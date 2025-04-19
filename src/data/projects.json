@@ -21,8 +21,8 @@
     "id": 3,
     "titulo": "Geek-Solutions",
     "descricao": "Desenvolvimento de um site para uma empresa do setor tecnológico, incluindo seções institucionais, apresentação de serviços, área de contato e um banco de currículos na seção 'Trabalhe Conosco', com integração para envio de e-mails",
-    "imagem": "/projeto3.png",
-    "repositorio": "https://github.com/seuusuario/portfolio",
+    "imagem": "/projeto4.png",
+    "repositorio": "https://github.com/HebertyRichards/Geek-Solutions",
     "hospedagem": "https://hebertyrichards.github.io/Geek-Solutions/",
     "linguagens": ["HTML", "CSS", "JavaScript", "JQuery", "PHP", "SQLite"]
   },
@@ -30,7 +30,7 @@
     "id": 4,
     "titulo": "Geek-Nine",
     "descricao": "Portal de notícias especializado no universo geek, com funcionalidades de cadastro e login de usuários, além de um chat global para interação em tempo real.",
-    "imagem": "/projeto4.png",
+    "imagem": "/projeto3.png",
     "repositorio": "https://github.com/HebertyRichards/GeekNine",
     "hospedagem": "https://geeknine-production.up.railway.app",
     "linguagens": ["HTML", "CSS", "JavaScript", "JQuery", "PHP", "SQLite"]

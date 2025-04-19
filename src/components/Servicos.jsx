@@ -15,12 +15,7 @@ const services = [
     title: "Desenvolvimento Web",
     description:
       "Desenvolvimento de aplicações web completas, desde landing pages até sistemas complexos com backend robusto.",
-    items: [
-      "Frontend React",
-      "Backend Node.js",
-      "APIs RESTful",
-      "Bancos de Dados",
-    ],
+    items: ["Front-end", "Back-end", "APIs RESTful", "Bancos de Dados"],
   },
   {
     icon: "📱",

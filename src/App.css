@@ -283,13 +283,16 @@ body {
 
 #sobre-p {
   color: HSL(0, 0%, 60.9%);
-  font-size: 1.3em;
 }
 
 .sobre-mim {
   display: flex;
   width: 80%;
   margin: 0 auto;
+}
+
+#frase {
+  font-size: 1.3em;
 }
 
 .persona h2 {
@@ -488,6 +491,7 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
+  border-color: #7b4eff;
 }
 
 .icone {

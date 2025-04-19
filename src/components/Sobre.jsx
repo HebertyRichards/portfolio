@@ -10,7 +10,7 @@ const skills = [
   { name: "Node.js", level: 80 },
   { name: "UI/UX Design", level: 85 },
   { name: "MySQL", level: 85 },
-  { name: "PHP", level: 70 },
+  { name: "PHP", level: 75 },
 ];
 
 const dados = [
@@ -77,14 +77,19 @@ const Sobre = () => {
             <p id="frase">
               Sou um desenvolvedor web apaixonado por criar soluções digitais
               que combinam funcionalidade e estética. Com mais de 2 anos de
-              experiência no mercado...
+              experiência no mercado, tenho trabalhado com as tecnologias mais
+              modernas para entregar produtos de alta qualidade.
             </p>
-            <p>
-              Minha jornada começou com HTML e CSS, mas rapidamente evoluiu...
+            <p id="frase">
+              Minha jornada começou com HTML e CSS, mas rapidamente evoluiu para
+              o desenvolvimento de aplicações complexas utilizando React,
+              TypeScript e Node.js. Acredito que o bom design e a experiência do
+              usuário são tão importantes quanto um código bem escrito.
             </p>
-            <p>
+            <p id="frase">
               Atualmente, foco em criar soluções web completas, desde o design
-              até a implementação...
+              até a implementação, sempre buscando a melhor performance e
+              acessibilidade.
             </p>
           </motion.div>
 
