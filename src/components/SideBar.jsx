@@ -21,9 +21,15 @@ function SideBar() {
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
             ×
           </a>
-          <a href="">Home</a>
-          <a href="#frase-impacto">Sobre</a>
-          <a href="#contact">Contato</a>
+          <a href="">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Projetos</a>
+          <a href="#">Serviços</a>
+          <a href="#">Depoimentos</a>
+          <a href="#">Contato</a>
+          <a id="button-talk2" href="">
+            Fale Comigo
+          </a>
         </div>
       </nav>
     </>

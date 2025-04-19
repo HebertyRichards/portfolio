@@ -2,10 +2,11 @@ import React from "react";
 import Home from "./pages/Home";
 import Apresentation from "./components/Apresentation";
 import Sobre from "./components/Sobre";
-import SliderImage from "./components/SliderImage";
-import Skills from "./components/Skills";
-import Projetos from "./components/Projetos";
+import Projeto from "./components/Projetos";
+import Servicos from "./components/Servicos";
+import Service from "./components/Service";
 import Contato from "./components/Contato";
+import Footer from "./pages/footer/Footer";
 import "./App.css";
 
 function App() {
@@ -16,10 +17,11 @@ function App() {
         <Apresentation />
       </div>
       <Sobre />
-      <SliderImage />
-      <Skills />
-      <Projetos />
+      <Projeto />
+      <Servicos />
+      <Service />
       <Contato />
+      <Footer />
     </>
   );
 }

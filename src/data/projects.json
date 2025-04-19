@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "titulo": "Barbearia Freitas",
+    "descricao": "Plataforma de agendamento para barbearia, permitindo que clientes realizem agendamentos sem necessidade de cadastro. O sistema envia confirmações por e-mail e WhatsApp, incluindo detalhes do agendamento e um link para cancelamento. Além disso, a plataforma direciona os clientes para o WhatsApp em caso de compra de produtos.",
+    "imagem": "/projeto1.png",
+    "repositorio": "https://github.com/HebertyRichards/web-barber",
+    "hospedagem": "https://web-barber-phi.vercel.app",
+    "linguagens": ["React.js", "Node.js", "Express.js", "MySQL", "CSS"]
+  },
+  {
+    "id": 2,
+    "titulo": "Gerador de QRCode",
+    "descricao": "Gerador de QR Code para qualquer caractere ou link digitado. Permite a opção de download do QR Code em formato PDF ou PNG",
+    "imagem": "/projeto2.png",
+    "repositorio": "https://github.com/HebertyRichards/Gerador-de-QRCode",
+    "hospedagem": "https://hebertyrichards.github.io/Gerador-de-QRCode/",
+    "linguagens": ["HTML", "CSS", "Vue.js"]
+  },
+  {
+    "id": 3,
+    "titulo": "Geek-Solutions",
+    "descricao": "Desenvolvimento de um site para uma empresa do setor tecnológico, incluindo seções institucionais, apresentação de serviços, área de contato e um banco de currículos na seção 'Trabalhe Conosco', com integração para envio de e-mails",
+    "imagem": "/projeto3.png",
+    "repositorio": "https://github.com/seuusuario/portfolio",
+    "hospedagem": "https://hebertyrichards.github.io/Geek-Solutions/",
+    "linguagens": ["HTML", "CSS", "JavaScript", "JQuery", "PHP", "SQLite"]
+  },
+  {
+    "id": 4,
+    "titulo": "Geek-Nine",
+    "descricao": "Portal de notícias especializado no universo geek, com funcionalidades de cadastro e login de usuários, além de um chat global para interação em tempo real.",
+    "imagem": "/projeto4.png",
+    "repositorio": "https://github.com/HebertyRichards/GeekNine",
+    "hospedagem": "https://geeknine-production.up.railway.app",
+    "linguagens": ["HTML", "CSS", "JavaScript", "JQuery", "PHP", "SQLite"]
+  }
+]
