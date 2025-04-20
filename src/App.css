@@ -32,6 +32,7 @@ html {
 body {
   background-color: HSL(0, 0%, 3.9%);
   color: white;
+  overflow-x: hidden;
 }
 
 #back {
