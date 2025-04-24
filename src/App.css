@@ -259,6 +259,7 @@ body {
   border: 1px solid rgb(39, 39, 39);
   margin: 10px;
 }
+
 #talk:hover {
   transition: 0.5s;
   background-color: hsl(12, 76%, 61%);
@@ -1014,5 +1015,9 @@ hr {
   .rodape-infos a {
     padding: 5px;
     font-size: 1.1em;
+  }
+
+  #frase {
+    font-size: 1em;
   }
 }
