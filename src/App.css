@@ -868,19 +868,16 @@ hr {
   }
 
   .apresentation {
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .apresentation #h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .apresentation p {
     font-size: 1em;
-  }
-
-  .apresentation h1 {
-    font-size: 1.3em;
   }
 
   .apresentation p {
@@ -902,7 +899,7 @@ hr {
   }
 
   .persona {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
   }
 
