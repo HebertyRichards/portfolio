@@ -6,7 +6,7 @@
     "imagem": "/projeto1.png",
     "repositorio": "https://github.com/HebertyRichards/web-barber",
     "hospedagem": "https://web-barber-phi.vercel.app",
-    "linguagens": ["React.js", "Node.js", "Express.js", "MySQL", "CSS"]
+    "linguagens": ["React.js", "Node.js", "Express.js", "MySQL", "CSS", "PHP"]
   },
   {
     "id": 2,
