@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import Modo from "./Modo";
 import Sobre from "./Sobre";
 import Projeto from "./Projetos";
@@ -25,12 +26,22 @@ function SideBar() {
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
             ×
           </a>
-          <a href="#home">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#contato">Contato</a>
-          <a id="button-talk2" href="#contato">
+          <a href="#home" onClick={closeNav}>
+            Início
+          </a>
+          <a href="#sobre" onClick={closeNav}>
+            Sobre
+          </a>
+          <a href="#projetos" onClick={closeNav}>
+            Projetos
+          </a>
+          <a href="#servicos" onClick={closeNav}>
+            Serviços
+          </a>
+          <a href="#contato" onClick={closeNav}>
+            Contato
+          </a>
+          <a id="button-talk2" href="#contato" onClick={closeNav}>
             Fale Comigo
           </a>
         </div>

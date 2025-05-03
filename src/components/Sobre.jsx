@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "JavaScript", level: 90 },
-  { name: "React", level: 80 },
+  { name: "React", level: 85 },
   { name: "CSS", level: 90 },
-  { name: "TypeScript", level: 80 },
+  { name: "PHP", level: 85 },
   { name: "Node.js", level: 80 },
   { name: "UI/UX Design", level: 85 },
   { name: "MySQL", level: 85 },
-  { name: "PHP", level: 75 },
+  { name: "TypeScript", level: 70 },
 ];
 
 const dados = [
@@ -81,9 +81,9 @@ const Sobre = () => {
             </p>
             <p id="frase">
               Minha jornada começou com HTML e CSS, mas rapidamente evoluiu para
-              o desenvolvimento de aplicações complexas utilizando React,
-              TypeScript e Node.js. Acredito que o bom design e a experiência do
-              usuário são tão importantes quanto um código bem escrito.
+              o desenvolvimento de aplicações complexas utilizando React e
+              Node.js. Acredito que o bom design e a experiência do usuário são
+              tão importantes quanto um código bem escrito.
             </p>
             <p id="frase">
               Atualmente, foco em criar soluções web completas, desde o design
