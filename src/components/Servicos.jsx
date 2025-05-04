@@ -1,5 +1,3 @@
-import React from "react";
-import Contato from "./Contato";
 import { motion } from "framer-motion";
 
 const services = [

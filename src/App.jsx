@@ -1,4 +1,3 @@
-import React from "react";
 import Home from "./pages/Home";
 import Apresentation from "./components/Apresentation";
 import Sobre from "./components/Sobre";
@@ -15,10 +14,10 @@ function App() {
         <Home />
         <Apresentation />
       </div>
-      <Sobre />
-      <Projeto />
-      <Servicos />
-      <Contato />
+        <Sobre />
+        <Projeto />
+        <Servicos />
+        <Contato />
       <Footer />
     </>
   );

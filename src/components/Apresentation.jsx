@@ -1,6 +1,3 @@
-import React from "react";
-import Projeto from "./Projetos";
-import Contato from "./Contato";
 import { motion } from "framer-motion";
 
 function Apresentation() {

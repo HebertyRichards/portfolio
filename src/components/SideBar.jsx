@@ -1,11 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
 import Modo from "./Modo";
-import Sobre from "./Sobre";
-import Projeto from "./Projetos";
-import App from "../App";
-import Servicos from "./Servicos";
-import Contato from "./Contato";
 import "../App.css";
 
 function SideBar() {

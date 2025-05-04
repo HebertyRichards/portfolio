@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 function Modo({ openNav }) {
   return (
     <>
@@ -7,5 +8,9 @@ function Modo({ openNav }) {
     </>
   );
 }
+
+Modo.propTypes = {
+  openNav: PropTypes.func.isRequired,
+};
 
 export default Modo;

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 function Contato() {
@@ -31,7 +30,7 @@ function Contato() {
             <div className="social-icons">
               <a
                 id="linkedin"
-                href="https://www.linkedin.com/in/heberty-souza/"
+                href="https://www.linkedin.com/in/heberty-lima/"
                 target="blank_"
               ></a>
               <a

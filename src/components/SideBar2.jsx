@@ -1,9 +1,3 @@
-import React from "react";
-import Sobre from "./Sobre";
-import App from "../App";
-import Projeto from "./Projetos";
-import Servicos from "./Servicos";
-import Contato from "./Contato";
 import "../App.css";
 
 function SideBar2() {

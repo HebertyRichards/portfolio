@@ -1,16 +1,16 @@
-import React from "react";
 import "../App.css";
 import { motion } from "framer-motion";
 
 const skills = [
   { name: "JavaScript", level: 90 },
   { name: "React", level: 85 },
+  { name: "Next.js", level: 75 },
+  {name: "TypeScript", level: 70},
   { name: "CSS", level: 90 },
   { name: "PHP", level: 85 },
   { name: "Node.js", level: 80 },
   { name: "UI/UX Design", level: 85 },
   { name: "MySQL", level: 85 },
-  { name: "TypeScript", level: 70 },
 ];
 
 const dados = [
