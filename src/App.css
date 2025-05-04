@@ -809,13 +809,26 @@ hr {
   color: HSL(0, 0%, 60.9%);
 }
 
+/* responsividade */
 @media (max-width: 1366px) {
   .container a {
     margin-left: 30px;
     font-size: 1.0em;
   }
-}
-/* responsividade */
+    .apresentation {
+      width: 70%;
+    }
+    
+    .apresentation #h2 {
+      font-size: 2em;
+    }
+    
+
+    .apresentation p {
+      font-size: 1.2em;
+    }
+  }
+
 @media (max-width: 1024px) {
   .sobre-info h2 {
     width: 30%;
@@ -835,6 +848,18 @@ hr {
 
   #contact-h2 {
     width: 60%;
+  }
+  
+  .apresentation {
+    width: 90%;
+  }
+  
+  .apresentation #h2 {
+    font-size: 1.5em;
+  }
+
+  .apresentation p {
+    font-size: 1em;
   }
 }
 @media (max-width: 800px) {
