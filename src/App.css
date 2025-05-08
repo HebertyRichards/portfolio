@@ -309,7 +309,6 @@ body {
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
   border: 1px solid #7b4eff;;
 }
 
