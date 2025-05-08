@@ -1,17 +1,10 @@
 import "../App.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import skillsData from "../data/skills.json"
 import { motion } from "framer-motion";
 
-const skills = [
-  { name: "JavaScript", level: 90 },
-  { name: "React", level: 85 },
-  { name: "Next.js", level: 75 },
-  {name: "TypeScript", level: 70},
-  { name: "CSS", level: 90 },
-  { name: "PHP", level: 85 },
-  { name: "Node.js", level: 80 },
-  { name: "UI/UX Design", level: 85 },
-  { name: "MySQL", level: 85 },
-];
 
 const dados = [
   {
@@ -93,39 +86,53 @@ const Sobre = () => {
           </motion.div>
 
           <motion.div
-            className="skills-section"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 id="skills-title">Minhas habilidades</h2>
-            {skills.map((skill, index) => (
-              <motion.div
-                key={index}
-                className="skill"
-                initial={{ width: 0 }}
-                whileInView={{ width: "100%" }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div className="skill-header">
-                  <span>{skill.name}</span>
-                  <span>{skill.level}%</span>
-                </div>
-                <div className="skill-bar">
-                  <motion.div
-                    className="skill-fill"
-                    style={{ width: `${skill.level}%` }}
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  ></motion.div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+      className="skills-section"
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="skills-title">Minhas habilidades</h2>
+
+      <Swiper
+        className="skills-swiper"
+        modules={[Autoplay]}
+        spaceBetween={20}
+        slidesPerView={3}
+        loop={true}
+        speed={1500}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+
+        onSwiper={(swiper) => {
+          setTimeout(() => {
+            if (swiper.params.navigation) {
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }
+          }, 0); 
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          801: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        {skillsData.map((skill, index) => (
+        <SwiperSlide key={index}>
+        <div className="skill-card">
+          <img src={skill.imagem} alt={skill.titulo} className="skill-icon" />
+          <h3 className="skill-title">{skill.titulo}</h3>
+        </div>
+      </SwiperSlide>
+        ))}
+      </Swiper>
+    </motion.div>
         </div>
 
         <motion.div

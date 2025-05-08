@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Footer() {
   const [tooltip, setTooltip] = useState("");
   const [copy, setCopy] = useState(false);
-  const email = "heberynho@gmail.com";
+  const email = "heberty.szlima@gmail.com";
   
   const copyEmail = () => {
     navigator.clipboard.writeText(email);

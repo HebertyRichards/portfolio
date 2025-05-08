@@ -249,7 +249,6 @@ body {
   transition: 0.5s;
   background-color: hsl(12, 76%, 61%);
 }
-
 /* seção sobre mim e skills */
 
 .sobre-info {
@@ -280,6 +279,7 @@ body {
 
 #frase {
   font-size: 1.3em;
+  width: 90%;
 }
 
 .persona h2 {
@@ -295,6 +295,35 @@ body {
   color: HSL(0, 0%, 60.9%);
 }
 
+
+.skills-swiper {
+  padding: 0 20px;
+}
+
+.skill-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #7b4eff;;
+}
+
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 10px;
+}
+
+.skill-title {
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
 .skills-section {
   background-color: #0d0d0d;
   color: #fff;
@@ -303,6 +332,7 @@ body {
   margin: auto;
   border-radius: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
 }
 
 #skills-title {
@@ -364,7 +394,7 @@ body {
 }
 
 .projects-grid {
-  margin-top: 4%;
+  margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 50px;
@@ -879,16 +909,16 @@ hr {
 
   #button-talk {
     background-color: HSL(252, 59%, 48%);
-    padding: 2px;
+    padding: 10px;
   }
 
   #talk {
-    padding: 2px;
+    padding: 10px;
     margin: 5px;
   }
 
   .apresentation {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -908,10 +938,15 @@ hr {
     display: none;
   }
 
+  .services-im {
+    width: 95%;
+  }
+
   .sobre-info h2 {
     font-size: 1.5em;
     width: 40%;
   }
+
 
   .sobre-mim {
     flex-direction: column;
@@ -938,6 +973,7 @@ hr {
     width: 60%;
     margin-top: 5%;
   }
+
 
   #proj {
     font-size: 1.3em;
@@ -968,6 +1004,12 @@ hr {
     margin-top: 20%;
   }
 
+  #sobre-p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
   .contact-container {
     grid-template-columns: 1fr;
     width: 90%;
@@ -987,9 +1029,13 @@ hr {
     height: 20px;
   }
 
+  .contact-main {
+    width: 90%;
+  }
+  
   #contact-h2 {
     font-size: 1.1em;
-    width: 100%;
+    width: 50%;
   }
 
   .contact-info {
