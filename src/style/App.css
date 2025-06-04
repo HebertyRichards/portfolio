@@ -740,18 +740,18 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-  background-image: url("../src/assets/linkedin.png");
   background-size: cover;
   margin: 10px;
 }
 
 #linkedin {
-  background-image: url("../src/assets/linkedin.png");
+  background-image: url("../assets/linkedin.png");
 }
 
 #github {
-  background-image: url("../src/assets/github.png");
+  background-image: url("../assets/github.png");
 }
+
 #linkedin:hover,
 #github:hover {
   transform: scale(1.2);
