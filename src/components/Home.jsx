@@ -1,4 +1,4 @@
-import Active from "../pages/header/Active";
+import Active from "../hooks/Active";
 
 function Home() {
   return (

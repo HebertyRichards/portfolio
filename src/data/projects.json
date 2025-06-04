@@ -6,16 +6,16 @@
     "imagem": "/projeto1.png",
     "repositorio": "https://github.com/HebertyRichards/web-barber",
     "hospedagem": "https://web-barber-phi.vercel.app",
-    "linguagens": ["React.js", "Node.js", "Express.js", "MySQL", "CSS", "PHP"]
+    "linguagens": ["React.js", "Node.js", "Express.js", "MySQL", "CSS", "PHP", "API RESTful"]
   },
   {
     "id": 2,
-    "titulo": "Gerador de QRCode",
-    "descricao": "Gerador de QR Code para qualquer caractere ou link digitado. Permite a opção de download do QR Code em formato PDF ou PNG",
-    "imagem": "/projeto2.png",
-    "repositorio": "https://github.com/HebertyRichards/Gerador-de-QRCode",
-    "hospedagem": "https://hebertyrichards.github.io/Gerador-de-QRCode/",
-    "linguagens": ["HTML", "CSS", "Vue.js"]
+    "titulo": "HR Utilities",
+    "descricao": "Plataforma de utilidades, converte qualquer link ou caractere em QR Code e tem a possibilidade de baixar em png, além de um conversor de arquivos excel (xlsx) para PDF. Com tabela dinâmica e um relatório sobre os dados utilizando IA",
+    "imagem": "/projeto5.png",
+    "repositorio": "https://github.com/HebertyRichards/Utilidades",
+    "hospedagem": "https://utilidades-seven.vercel.app/",
+    "linguagens": ["Vue.js", "CSS", "Node.js", "Express", "API RESTful", "API Open AI"]
   },
   {
     "id": 3,

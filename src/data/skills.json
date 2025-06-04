@@ -54,5 +54,13 @@
     {
         "titulo": "SQLite",
         "imagem": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg"
+    },
+    {
+        "titulo": "PostgreeSQL",
+        "imagem": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+    },
+    {
+        "titulo": "Supabase",
+        "imagem": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
     }
 ]

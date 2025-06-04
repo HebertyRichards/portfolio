@@ -1,11 +1,11 @@
-import Home from "./pages/Home";
+import Home from "./components/Home";
 import Apresentation from "./components/Apresentation";
 import Sobre from "./components/Sobre";
 import Projeto from "./components/Projetos";
 import Servicos from "./components/Servicos";
 import Contato from "./components/Contato";
-import Footer from "./pages/footer/Footer";
-import "./App.css";
+import Footer from "./components/Footer";
+import "./style/App.css";
 
 function App() {
   return (

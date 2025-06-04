@@ -946,6 +946,9 @@ hr {
     width: 40%;
   }
 
+  .sobre {
+  width: 95%;
+}
 
   .sobre-mim {
     flex-direction: column;

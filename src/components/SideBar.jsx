@@ -1,5 +1,5 @@
-import Modo from "./Modo";
-import "../App.css";
+import Modo from "../utils/Modo";
+import "..//style/App.css";
 
 function SideBar() {
   const openNav = () => {
