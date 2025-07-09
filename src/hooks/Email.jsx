@@ -1,12 +1,11 @@
 import { useEffect } from "react";
+import axios from "axios";
 
-export function Email() {  
-    useEffect(() => {
-        fetch("https://portfolio-txp6.onrender.com/visit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }).catch((err) => console.error("Erro ao registrar visita:", err));
-      }, []);
-    }
+export function Email() {
+  useEffect(() => {
+    axios.post("https://portfolio-1-3pdy.onrender.com/visit")
+      .catch((err) => console.error("Erro ao registrar visita:", err));
+  }, []);
+
+  return null;
+}

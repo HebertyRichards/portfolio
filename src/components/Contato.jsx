@@ -1,6 +1,46 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import axios from "axios";
 
-function Contato() {
+export default function Contato() {
+const [formData, setFormData] = useState({
+  nome: "",
+  email: "",
+  assunto: "",
+  mensagem: "",
+});
+
+const [status, setStatus] = useState(null);
+
+const handleChange = (e) => {
+  setFormData(prev => ({
+    ...prev,
+    [e.target.name]: e.target.value,
+  }));
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await axios.post("https://portfolio-1-3pdy.onrender.com/send-email", {
+      nome: formData.nome,
+      email: formData.email,
+      assunto: formData.assunto,
+      mensagem: formData.mensagem,
+    });
+
+    setStatus({ success: true, message: response.data.message });
+    setFormData({ nome: "", email: "", assunto: "", mensagem: "" }); 
+  } catch (error) {
+    setStatus({
+      success: false,
+      message:
+        error.response?.data?.error || "Erro ao enviar, tente novamente.",
+    });
+  }
+};
+
   return (
     <>
       <div id="contato"></div>
@@ -40,23 +80,49 @@ function Contato() {
               ></a>
             </div>
           </div>
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
-              <input type="text" placeholder="Seu nome completo" required />
-              <input type="email" placeholder="seu@email.com" required />
+            <input
+            type="text"
+            name="nome"
+            placeholder="Seu nome completo"
+            required
+            value={formData.nome}
+            onChange={handleChange}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+            value={formData.email}
+            onChange={handleChange}
+          />
             </div>
-            <input type="text" placeholder="Assunto da mensagem" required />
-            <textarea
-              rows="4"
-              placeholder="Descreva seu projeto ou dúvida em detalhes"
-              required
-            ></textarea>
-            <button type="submit">✈️ Enviar Mensagem</button>
-          </form>
+            <input
+          type="text"
+          name="assunto"
+          placeholder="Assunto da mensagem"
+          required
+          value={formData.assunto}
+          onChange={handleChange}
+        />
+        <textarea
+          rows="4"
+          name="mensagem"
+          placeholder="Descreva seu projeto ou dúvida em detalhes"
+          required
+          value={formData.mensagem}
+          onChange={handleChange}
+        ></textarea>
+        <button type="submit">✈️ Enviar Mensagem</button>
+      </form>
+
+      {status && (
+        <p style={{ color: status.success ? "green" : "red" }}>{status.message}</p>
+      )}
         </div>
       </motion.section>
     </>
   );
 }
-
-export default Contato;
