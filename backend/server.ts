@@ -44,8 +44,7 @@ app.post("/visit", async (req: Request, res: Response) => {
       html,
     });
     res.status(200).json({ message: "Email de visita enviado!" });
-  } catch (error) {
-    console.error("Erro ao enviar email:", error);
+  } catch (error: unknown) {
     res.status(500).json({ message: "Erro ao enviar o email." });
   }
 });
@@ -68,8 +67,7 @@ app.post("/send-email", async (req: Request, res: Response) => {
   try {
     await transport.sendMail(mailOptions);
     res.status(200).json({ message: "Email enviado com sucesso!" });
-  } catch (error) {
-    console.error("Erro ao enviar email:", error);
+  } catch (error: unknown) {
     res.status(500).json({ error: "Erro ao enviar email." });
   }
 });

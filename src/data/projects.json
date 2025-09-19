@@ -1,6 +1,15 @@
 [
   {
     "id": 1,
+    "titulo": "Auditore-Forum",
+    "descricao": "Fórum interativo com cargos diferenciados e permissões específicas. Inclui sistema de postagens, como criação de tópicos e comentários, autenticação JWT, possibilidade de seguir outros usuários, visualização de pessoas online em tempo real e limitação de postagens dependendo da categoria.",
+    "imagem": "/projeto4.png",
+    "repositorio": "https://github.com/HebertyRichards/aud-forum",
+    "hospedagem": "https://aud-forum.vercel.app",
+    "linguagens": ["Next.js", "TypeScript", "React Query", "Tailwind CSS", "shadcn ui", "Node.js", "Express.js", "PostgreeSQL", "Supabase" ,"API RESTful" ]
+  },
+  {
+    "id": 2,
     "titulo": "Barbearia Freitas",
     "descricao": "Plataforma de agendamento para barbearia, permitindo que clientes realizem agendamentos sem necessidade de cadastro. O sistema envia confirmações por e-mail e WhatsApp, incluindo detalhes do agendamento e um link para cancelamento. Além disso, a plataforma direciona os clientes para o WhatsApp em caso de compra de produtos.",
     "imagem": "/projeto1.png",
@@ -9,22 +18,13 @@
     "linguagens": ["React.js", "Node.js", "Express.js", "MySQL", "CSS", "PHP", "API RESTful"]
   },
   {
-    "id": 2,
+    "id": 3,
     "titulo": "HR Utilities",
     "descricao": "Plataforma de utilidades, converte qualquer link ou caractere em QR Code e tem a possibilidade de baixar em png, além de um conversor de arquivos excel (xlsx) para PDF. Com tabela dinâmica e um relatório sobre os dados utilizando IA",
     "imagem": "/projeto5.png",
     "repositorio": "https://github.com/HebertyRichards/Utilidades",
-    "hospedagem": "https://utilidades-seven.vercel.app/",
+    "hospedagem": "https://utilidades-seven.vercel.app",
     "linguagens": ["Vue.js", "CSS", "Node.js", "Express", "API RESTful", "API Open AI"]
-  },
-  {
-    "id": 3,
-    "titulo": "Geek-Solutions",
-    "descricao": "Desenvolvimento de um site para uma empresa do setor tecnológico, incluindo seções institucionais, apresentação de serviços, área de contato e um banco de currículos na seção 'Trabalhe Conosco', com integração para envio de e-mails",
-    "imagem": "/projeto4.png",
-    "repositorio": "https://github.com/HebertyRichards/Geek-Solutions",
-    "hospedagem": "https://hebertyrichards.github.io/Geek-Solutions/",
-    "linguagens": ["HTML", "CSS", "JavaScript", "JQuery", "SQLite"]
   },
   {
     "id": 4,

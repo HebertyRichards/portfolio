@@ -19,11 +19,13 @@ const handleChange = (e) => {
   }));
 };
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await axios.post("https://portfolio-1-3pdy.onrender.com/send-email", {
+    const response = await axios.post(`${API_URL}/send-email`, {
       nome: formData.nome,
       email: formData.email,
       assunto: formData.assunto,
